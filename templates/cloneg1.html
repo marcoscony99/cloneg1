@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globo.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        a {
+            color: inherit; /* Mantém a cor do texto */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <div class="logo">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Globo_Logo_1974.svg" alt="Globo.com" width="150">
+       </div>
+       <div class="search-container">
+           <label for="search" class="search-label">Pesquise na Globo.com</label>
+           <form action="#" method="get">
+               <input type="text" id="search" name="search">
+               <button type="submit">ok</button>
+           </form>
+       </div>
+   </header>
+   <main>
+       <div class="left-news news">
+           <img src="https://i.glbimg.com/og/ig/infoglobo1/f/original/2019/02/01/joelmavale.jpg" alt="Incêndio">
+           <h1><a href="https://memoriaglobo.globo.com/jornalismo/coberturas/incendio-no-edificio-joelma/noticia/incendio-no-edificio-joelma.ghtml">Sobe para 189 nº de mortos em incêndio no Edifício Joelma, em SP</a></h1>
+           <h3>• Pelo menos 293 estão feridos. Acompanhe resgates</h3>
+       </div>
+       <div class="right-news">
+           <div class="news">
+               <h1><a href="https://memoriaglobo.globo.com/jornalismo/coberturas/escandalo-watergate/noticia/escandalo-watergate.ghtml">Em meio a escândalo, Nixon renuncia à presidência dos EUA</a></h1>
+               <h3>• O que esperar do governo de Gerald Ford?</h3>
+           </div>
+           <div class="news orange-news">
+               <h1><a href="https://memoriaglobo.globo.com/entretenimento/musicais-e-shows/roberto-carlos-especial/noticia/anos-1970.ghtml">NOVIDADE: Fim de ano na Globo terá Especial de Roberto Carlos</a></h1>
+               <h3>• Relembre os maiores sucessos do jovem Rei</h3>
+           </div>
+           <div class="news green-news">
+               <h1><a href="https://memoriaglobo.globo.com/esporte/copa-do-mundo-da-alemanha-1974/noticia/copa-do-mundo-da-alemanha-1974.ghtml#ancora_2">De virada, Alemanha bate Holanda e é campeã do mundo</a></h1>
+               <h3>• <a href="https://memoriaglobo.globo.com/esporte/copa-do-mundo-da-alemanha-1974/noticia/copa-do-mundo-da-alemanha-1974.ghtml#ancora_2">Johan Cruijff é eleito melhor jogador da competição</a></h3>
+               <img class="small-img" src="https://s2-memoriaglobo.glbimg.com/--PP2OCkhcS88IVvprcc62DzfrE=/0x5:650x371/1080x608/smart/https://i.s3.glbimg.com/v1/AUTH_ee6202d7f3f346a7a5d7affb807d8893/internal_photos/bs/2021/k/v/eiMS2HSpGfbe0ussEwdg/copa-do-mundo-da-alemanha-ocidental-1974-quartas-de-final-brasil-1-x-0-alemanha-oriental.-rivelino-faz-o-gol-que-garantiu-a-permanencia-do-brasil-no-campeonato-26-06-1974.-foto-arquivo-agencia-o-globo.jpg" alt="Copa do Mundo 1974">
+           </div>
+       </div>
+   </main>
+   <aside>
+       <ul>
+           <li><a href="#">Astral</a></li>
+           <li><a href="#">Bastidores da TV</a></li>
+           <li><a href="#">Brasileirão 1974</a></li>
+           <li><a href="#">Busca</a></li>
+           <li><a href="#">Celebridades</a></li>
+           <li><a href="#">Chat</a></li>
+           <li><a href="#">Cidades</a></li>
+           <li><a href="#">Diversão & Arte</a></li>
+           <li><a href="#">Economia</a></li>
+           <li><a href="#">Educação</a></li>
+           <li><a href="#">Esportes</a></li>
+           <li><a href="#">GloboMail</a></li>
+           <li><a href="#">GloboNews.com</a></li>
+           <li><a href="#">GloboShopping</a></li>
+           <li><a href="#">Humor</a></li>
+           <li><a href="#">Infantil</a></li>
+           <li><a href="#">Jogos</a></li>
+           <li><a href="#">Música</a></li>
+           <li><a href="#">Palm</a></li>
+           <li><a href="#">Paparazzo</a></li>
+           <li><a href="#">Promoções</a></li>
+           <li><a href="#">Tecnologia</a></li>
+           <li><a href="#">TV Globo</a></li>
+       </ul>
+   </aside>
+   <footer></footer>
+</body>
+</html>
