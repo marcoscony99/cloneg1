@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+ 
 header {
     display: flex;
     justify-content: center;
@@ -10,24 +11,49 @@ header {
     background-color: #f8f8f8;
     position: relative;
 }
+ 
+.propagandas {
+    display: flex;
+    justify-content: space-between; /* Distribuir o espaço entre as duas imagens */
+    overflow: hidden; /* Esconder qualquer conteúdo excedente */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.propaganda img, .propaganda2 img {
+    width: calc(50% - 5px); /* 50% do tamanho para cada imagem */
+    width: 200%;
+    height: auto;
+    max-height: 200px; /* Altura máxima para as imagens */
+    margin: 0; /* Remover margens */
+}
+
+.propaganda2 {
+    position: relative; /* Define a posição relativa */
+    left: -340px; /* Mover a segunda propaganda 30px para a esquerda */
+}
+
 .search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .search-label {
     margin-bottom: 5px;
     font-size: 14px;
 }
+
 form {
     display: flex;
 }
+
 input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px 0 0 4px;
 }
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -38,33 +64,40 @@ button {
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
+
 main {
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
+
 .left-news, .right-news {
     flex: 0 0 48%;
 }
+
 .right-news {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .news img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
+
 .small-img {
     width: 590px;
     max-width: 100%;
     height: auto;
     margin-top: 10px
 }
+
 h1 {
     color: #8C2633;
     font-family: var(--font-family-display), var(--font-family-display-fallback);
@@ -72,14 +105,16 @@ h1 {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 h3 {
     color: #333;
     margin-bottom: 5px;
-
 }
+
 .left-news h1 {
     font-size: 40px; /* Tamanho de fonte para h1 */
 }
+
 .left-news h3 {
     font-size: 24px; /* Tamanho de fonte para h3 */
 }
@@ -87,25 +122,31 @@ h3 {
 .green-news h1, .green-news h3 {
     color: #06aa48;
 }
+
 .orange-news h1, .orange-news h3 {
     color: #ff6700;
 }
+
 aside {
     background-color: #f0f0f0;
     padding: 20px;
 }
+
 aside ul {
     list-style: none;
     padding: 0;
 }
+
 aside ul li {
     margin-bottom: 10px;
 }
+
 aside ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
 }
+
 aside ul li a:hover {
     color: #007BFF;
 }
@@ -136,5 +177,14 @@ aside ul li a:hover {
     }
     .left-news h3 {
         font-size: 18px; /* Tamanho de fonte para h3 em telas menores */
+    }
+    /* Adicionando propriedades específicas para a versão móvel */
+    .propaganda {
+        display: none; /* Oculta a propaganda1 na versão móvel */
+    }
+    .propaganda2 {
+        display: block; /* Torna a propaganda2 visível na versão móvel */
+        left: -40px; /* Move a propaganda2 10px para a esquerda */
+        margin-top: 20px; /* Adiciona um espaçamento superior */
     }
 }
